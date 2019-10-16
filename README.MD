@@ -1,6 +1,6 @@
 # Javascript Five
 
-In this lecture we cover closures, prototypal inheritance, and constructor functions.
+In this lecture we cover closures, prototypical inheritance, and constructor functions.
 
 ## Closures
 
@@ -24,9 +24,9 @@ Here is an example.
   };
 ```
 
-We can now create what we like to call `snapshots` of the closure function. When a function forms a closure, it has access to all of it's local variables and the lexical environment. The lexical scope that the function has access to is the `snapshot`.
+We can now create what are called `snapshots` of the closure function. When a function forms a closure, it has access to all of its local variables and the lexical environment. The lexical scope that the function has access to is the `snapshot`.
 
-`lexical scope` - This is where we determine a variables or functions scope based solely on it's position in our code.
+`lexical scope` - This is where we determine a variables or functions scope based solely on its position in our code.
 
 We can create the snapshot like this.
 
@@ -92,75 +92,75 @@ This time we are returning multiple functions, rather than just one function.
 
 ### Closure Practice Problems
 
-Now let's practice creating some closure functions with different use cases.
+Now let's practice creating closure functions with different use cases.
 
-Let's first create a closure function to make a sandwhich.
+Let's first create a closure function to make a sandwich.
 
 ```js
-function createSandwhich(){
+function createSandwich(){
     // this will keep track 
-    const sandwhichIngredients = [];
-    // thefunction that gets returned will add ingredients to the sandwhich
+    const sandwichIngredients = [];
+    // thefunction that gets returned will add ingredients to the sandwich
     function addIngredient(ingredient){
         sandwhichIngredients.push(ingredient);
-        return sandwhichIngredients;
+        return sandwichIngredients;
     }
     // return the function
     return addIngredient;
 }
 ```
 
-We now have a sandwhich maker closure function that we can easily re-use to create new sandwhiches. Let's go ahead an now make a few.
+We now have a sandwich maker closure function that we can easily re-use to create new sandwiches. Let's go ahead an now make a few.
 
 ```js
 // make the sandwhich
-let tayteSandwhich = createSandwhich();
+let tayteSandwich = createSandwich();
 // add ingredients
-tayteSandwhich('Meatballs');
-tayteSandwhich('Marinara Sauce');
-tayteSandwhich('Parmasen Cheese');
+tayteSandwich('Meatballs');
+tayteSandwich('Marinara Sauce');
+tayteSandwich('Parmasan Cheese');
 ```
 
 ```js
 // make the sandwhich
-let mattSandwhich = createSandwhich();
+let mattSandwich = createSandwich();
 // add ingredients
-mattSandwhich('Ham')
-mattSandwhich('Cheese')
+mattSandwich('Ham')
+mattSandwich('Cheese')
 ```
 
 Now let's revamp our closure function to add more functionality by following the module pattern.
 
 ```js
-function createSandwhich(){
+function createSandwich(){
     // this will keep track 
-    const sandwhichIngredients = [];
+    const sandwichIngredients = [];
 
     // add ingredients
     function addIngredient(ingredient){
-        sandwhichIngredients.push(ingredient);
-        return sandwhichIngredients;
+        sandwichIngredients.push(ingredient);
+        return sandwichIngredients;
     };
     
     // remove ingredients
     function removeIngredient(){
         // check to make sure the ingredient exists
         // this will return the index value or -1 if not found
-        let ingredientIndex = sandwhichIngredients.indexOf(ingredient);
+        let ingredientIndex = sandwichIngredients.indexOf(ingredient);
         // check to see if item is missing
         if(ingredientIndex === -1){
             // return an error message
             return 'Sorry, that ingredient does not exist. Pleas try another!'
         } else {
             // if it is found, remove the item
-            sandwhichIngredients.splice(ingredientIndex, 1);
-            return sandwhichIngredients;
+            sandwichIngredients.splice(ingredientIndex, 1);
+            return sandwichIngredients;
         };
     };
 
     // read the ingredients
     function readIngredients(){
-        return sandwhichIngredients;
+        return sandwichIngredients;
     };
 
     // create the module or object thatv will be returned
@@ -172,19 +172,19 @@ function createSandwhich(){
 }
 ```
 
-Let's used our revamped sandwhich maker closure function.
+Let's used our revamped sandwich maker closure function.
 
 ```js
-// make the sandwhich
-let tayteSandwhich = createSandwhich();
+// make the sandwich
+let tayteSandwich = createSandwich();
 // add ingredients
-tayteSandwhich.addIngredient('Meatballs');
-tayteSandwhich.addIngredient('Marinara Sauce');
-tayteSandwhich.addIngredient('Parmasen Cheese');
+tayteSandwich.addIngredient('Meatballs');
+tayteSandwich.addIngredient('Marinara Sauce');
+tayteSandwich.addIngredient('Parmasen Cheese');
 // remove ingredient
-tayteSandwhich.removeIngredient('Meatballs');
-// read the ingredients on the sandwhich
-tayteSandwhich.reaadIngredients();
+tayteSandwich.removeIngredient('Meatballs');
+// read the ingredients on the sandwich
+tayteSandwich.reaadIngredients();
 ```
 
 Now let's create another closure function that has a little more functionality. This time we will create a calculator that we can use to perform basic math operations for us. We will use the `modular pattern` to house our methods.
@@ -251,7 +251,7 @@ A `constructor function` is special function we can use in javascript to create 
 
 It's easy to think that a `constructor function` is a blueprint to the object we want to build.
 
-We will create a `constructor function` just like any other function, except this time it will start will capital letter.
+We will create a `constructor function` just like any other function, except this time it will start with a capital letter.
 
 ```js
 function Car(){
@@ -259,7 +259,7 @@ function Car(){
 }
 ```
 
-Inside of the constructor function, we use the `this` keyword to refer to the object the function will build. The instance will automatically be returned for us so we do not need to delcare the `return` statement.
+Inside of the constructor function, we use the `this` keyword to refer to the object the function will build. The instance will automatically be returned for us so we do not need to declare the `return` statement.
 
 
 ```js
@@ -326,11 +326,11 @@ civic.honk();
 tesla.honk();
 ```
 
-If we take a closer look at this, by console logging the instance objects, you can see that we are delcaring a new `honk` function everytime we create a new instance from the Car constructor. This could be very impactful and not memory efficiant for our applications when we create hundreds of instances from that constructor.
+If we take a closer look at this, by console logging the instance objects, you can see that we are declaring a new `honk` function everytime we create a new instance from the Car constructor. This could be very impactful and not memory efficient for our applications when we create hundreds of instances from that constructor.
 
-So how can we go about having this method avaiable to us for every instance, but only declare it once? This is where `prototype functions` save the day!
+So how can we go about having this method available to us for every instance, but only declare it once? This is where `prototype functions` save the day!
 
-Instead of putting the `honk` method on every instance that gets created, we can add the method as a `prototype method` to the `Car` constructor. This will allow all car objects made from the Car constructor to have access to it, while only having to delcare it once.
+Instead of putting the `honk` method on every instance that gets created, we can add the method as a `prototype method` to the `Car` constructor. This will allow all car objects made from the Car constructor to have access to it, while only having to declare it once.
 
 We will directly target the `prototype` property that exists on the `Car` function (object) and add the method onto it.
 
@@ -357,9 +357,9 @@ console.log(tesla)
 
 After console logging the instances, we can see that the `honk` method no longer exists on that object. So how does the object have access to that prototype method?
 
-This is where `prototypal inheritance` comes into play.
+This is where `prototypical inheritance` comes into play.
 
-## Prototypal Inheritance
+## Prototypical Inheritance
 
 In javascript all functions are really just objects behind the scenes. This means that functions can have properties. Every function has a property called `prototype`, which is also another object that will hold methods inside of it.
 
@@ -391,7 +391,7 @@ There are three steps we will need to follow to make this happen.
 
 2. We will then set the constructor functions protoype object to a new object created from the prototype of the object we want to inherit from. In this case it will be the `Car` prototype.
 
-3. We will now set the constructor function appropriately for the clarity on which constructor function is responsible for making the object.
+3. We will now set the constructor function appropriately for the clarity on which the constructor function is responsible for making the object.
 
 ```js
 // Step One:
@@ -433,7 +433,7 @@ Car.prototype.oilChange = function(){
 mySuperCar.oilChange();
 ```
 
-There is alot going on here and this is why `classes` were introduced to javascript. They are what is known as `syntactic sugar` because they make this functionality simple using the `extends` keyword and `super` function.
+There is a lot going on here and this is why `classes` were introduced to javascript. They are what is known as `syntactic sugar` because they make this functionality simple using the `extends` keyword and `super` function.
 
 Let's take a look at what we just did, but in class syntax.
 
@@ -461,4 +461,4 @@ class SuperCar extends Car {
 }
 ```
 
-See how much easier it was?
+See how much easier it is?
