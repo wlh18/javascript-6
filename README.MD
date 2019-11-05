@@ -1,4 +1,4 @@
-# Javascript Five
+# Javascript Six
 
 In this lecture we cover Classes and Closures.
 
