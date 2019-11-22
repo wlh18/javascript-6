@@ -2,6 +2,10 @@
 
 In this lecture we cover Classes and Closures.
 
+## Lecture Slides
+
+https://slides.com/mattbodily/deck-27
+
 ## Classes
 
 Classes are a newer syntax that we can use as a blueprint to create objects. 
