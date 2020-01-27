@@ -2,9 +2,13 @@
 
 In this lecture we cover Classes and Closures.
 
+## Lecture Code
+
+https://repl.it/@matias_perez/JavaScript-6-Lecture-Code
+
 ## Lecture Slides
 
-https://slides.com/mattbodily/deck-27
+https://slides.com/matias_perez/javascript-six/
 
 ## Classes
 
