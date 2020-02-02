@@ -10,6 +10,30 @@ https://repl.it/@matias_perez/JavaScript-6-Lecture-Code
 
 https://slides.com/matias_perez/javascript-six/
 
+# Student Learning Objectives
+
+## Closures
+
+* Student can nest a function within a function
+* Student can access a function's local variable from a nested function
+* Student can create a function that returns a function
+* Student can create private variables using closures
+* Student can create multiple 'snapshots' of the same lexical environment (invoking outer function multiple times)
+* Student can use the module pattern
+
+## Classes
+* Student can build a class.
+* Student can build a class with a `constructor` method.
+* Student can use the `this` keyword in the constructor to add properties to an object.
+* Student can create an object with basic properties from a class with a constructor utilizing the `new` keyword and invoking the class.
+* Student can use parameters in the `constructor` method to assign property values.
+* Student can pass arguments to the invoked class when the object is created.
+* Student can create prototype methods on the class.
+* Student can alter the object values from a prototype method by using the `this` keyword.
+* Student can extend from another `class`
+* Student understands and can use `super`
+
+
 ## Classes
 
 Classes are a newer syntax that we can use as a blueprint to create objects. 
