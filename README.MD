@@ -399,3 +399,30 @@ function createAccount(){
   }
 };
 ```
+
+## Additional Resources
+
+### General
+[Closures - Javascript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures) - MDN documentation about javascript closures
+
+[Classes - Javascript | MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) - MDN documentation about classes in javascript.  Excellent breakdown of syntax.
+
+[Learn Javascript classes | CodeAcademy](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-classes) - Interactive resource to practice learning classes.
+
+### Articles
+
+[Master the Javascript Interview - Closures | Medium](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36) - A great article breaking down the concept of closures.  Really helpful to wrap your head around what they are.
+
+[Javascript Closures Explained by Mailing a Package](https://www.freecodecamp.org/news/javascript-closures-explained-by-mailing-a-package-4f23e9885039/) - An extended metaphor to describe how closures work.  
+
+[Practical Uses for Closures | Medium](https://medium.com/@dis_is_patrick/practical-uses-for-closures-c65640ae7304) - An article giving some real world uses of closures.
+
+[Javascript ES6: Classes | Medium](https://medium.com/@luke_smaki/javascript-es6-classes-8a34b0a6720a) - A good overview of classes which also provides an introduction to object oriented programming.
+
+### Videos
+
+[Learn closures in 7 minutes | YouTube](https://www.youtube.com/watch?v=3a0I8ICR1Vg) - A good breakdown of closures.  Using this in conjuction with the above article from Medium will do a lot to round out understanding of closures.  
+
+[FreeCodeCamp - Classes tutorial](https://www.youtube.com/watch?v=2ZphE5HcQPQ) - Detailed walkthrough of classes
+
+[Javascript OOP Crash Course | YouTube](https://www.youtube.com/watch?v=vDJpGenyHaA) - An introduction to object oriented programming using classes as an example.
