@@ -1,40 +1,50 @@
-# Javascript Six
-
-In this lecture we cover Classes and Closures.
 
 ## Lecture Code
 
 https://repl.it/@matias_perez/JavaScript-6-Lecture-Code
 
-## Lecture Slides
+# Lesson Sections
 
-https://slides.com/matias_perez/javascript-six/
+## Lecture Slides: https://slides.com/matias_perez/javascript-six/
+
+1. [JavaScript 6 Lecture Notes](#JavaScript-6-Lecture-Notes)
+1. [Additional Resources](#additional-resources)
+1. [JavaScript 6 Mini Project](#JavaScript-6-Mini-Project)
+1. [JavaScript 6 Afternoon Project](#JavaScript-6-Afternoon-Project)
 
 # Student Learning Objectives
 
-## Closures
+<details>
+    <summary>Closures</summary>
+    <ul>
+        <li>Student can nest a function within a function</li>
+        <li>Student can access a function's local variable from a nested function</li>
+        <li>Student can create a function that returns a function</li>
+        <li>Student can create private variables using closures</li>
+        <li>Student can create multiple 'snapshots' of the same lexical environment (invoking outer function multiple times)</li>
+        <li>Student can use the module pattern</li>
+    </ul>
+</details>
 
-* Student can nest a function within a function
-* Student can access a function's local variable from a nested function
-* Student can create a function that returns a function
-* Student can create private variables using closures
-* Student can create multiple 'snapshots' of the same lexical environment (invoking outer function multiple times)
-* Student can use the module pattern
+<details>
+    <summary>Classes</summary>
+    <ul>
+        <li>Student can build a class</li>
+        <li>Student can build a class with a `constructor` method</li>
+        <li>Student can use the `this` keyword in the constructor to add properties to an object</li>
+        <li>Student can create an object with basic properties from a class with a constructor utilizing the `new` keyword and invoking the class</li>
+        <li>Student can use parameters in the `constructor` method to assign property values</li>
+        <li>Student can pass arguments to the invoked class when the object is created</li>
+        <li>Student can create prototype methods on the class</li>
+        <li>Student can alter the object values from a prototype method by using the `this` keyword</li>
+        <li>Student can extend from another `class`</li>
+        <li>Student understands and can use `super`</li>
+    </ul>
+</details>
 
-## Classes
-* Student can build a class.
-* Student can build a class with a `constructor` method.
-* Student can use the `this` keyword in the constructor to add properties to an object.
-* Student can create an object with basic properties from a class with a constructor utilizing the `new` keyword and invoking the class.
-* Student can use parameters in the `constructor` method to assign property values.
-* Student can pass arguments to the invoked class when the object is created.
-* Student can create prototype methods on the class.
-* Student can alter the object values from a prototype method by using the `this` keyword.
-* Student can extend from another `class`
-* Student understands and can use `super`
+## JavaScript 6 Lecture Notes
 
-
-## Classes
+### Classes
 
 Classes are a newer syntax that we can use as a blueprint to create objects. 
 
@@ -60,7 +70,7 @@ const myCar = new Car();
 console.log(myCar) //result: this will be the new car object from the class invocation
 ```
 
-### Constructor Function
+#### Constructor Function
 
 We can have our class accept arguments by using a `constructor` function. This function is where we will receive arguments and can then add them as a property to the object that class returns by using the `this` keyword. 
 
@@ -78,7 +88,7 @@ class Car {
 const myCar = new Car('Tesla', 'Model X', 2020);
 ```
 
-### ProtoType Functions
+#### ProtoType Functions
 
 Prototype functions are functions that are built into a certain object type or class. We can create a prototype function on our class so that every object that is created from the class will have access to the function.
 
@@ -100,7 +110,7 @@ class Car {
 const myCar = new Car('Tesla', 'Model X', 2020);
 ```
 
-### Extending Classes
+#### Extending Classes
 
 We can have a class extend from another class to inherit the properties and prototypes from another class without having to re-write the logic.
 
@@ -127,7 +137,7 @@ class Fish extends Animal {
 const fishy = new Fish();
 ```
 
-### Super
+#### Super
 
 `super` is the keyword we can use when extending a class to invoke the constructor method from the class that is being extended. When we invoke `super` we will pass the arguments to the parent classes constructor method.
 
@@ -157,7 +167,7 @@ const fishy = new Fish('fishy');
 fishy.talk('bubble bubble');
 ```
 
-## Closures
+### Closures
 
 A `closure function` is a function that is returned from another function. The inner function that is returned will rely on data that is declared in the outer functions scope.
 
@@ -213,7 +223,7 @@ countTwo();
 countTwo();
 ```
 
-### Module Pattern
+#### Module Pattern
 
 We can follow a `module pattern` with our closure functions by creating `private variables` and `private functions`. This is a way that we can create data that will be shielded from our `global scope` so the only function that has access to it, is the `closure function`.
 
@@ -245,7 +255,7 @@ var module1 = modulePattern();
 
 This time we are returning multiple functions, rather than just one function.
 
-### Closure Practice Problems
+#### Closure Practice Problems
 
 Now let's practice creating closure functions with different use cases.
 
@@ -426,3 +436,9 @@ function createAccount(){
 [FreeCodeCamp - Classes tutorial](https://www.youtube.com/watch?v=2ZphE5HcQPQ) - Detailed walkthrough of classes
 
 [Javascript OOP Crash Course | YouTube](https://www.youtube.com/watch?v=vDJpGenyHaA) - An introduction to object oriented programming using classes as an example.
+
+# JavaScript 6 Mini Project
+Embedded in Unit 3.1 at https://lms.devmountain.com/courses/70
+
+# JavaScript 6 Afternoon Project
+https://github.com/DevMountain/javascript-5-afternoon-project/tree/web-dev-v3
