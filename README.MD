@@ -44,6 +44,12 @@ https://repl.it/@matias_perez/JavaScript-6-Lecture-Code
 
 ## JavaScript 6 Lecture Notes
 
+<details open>
+    <summary>Lecture Introduction</summary>
+
+In this lecture we will introduce JavaScript classes, which are considered syntactical sugar for constructor functions. We will also cover closure functions and how to use them in your code.
+</details>
+
 ### Classes
 
 Classes are a newer syntax that we can use as a blueprint to create objects. 
