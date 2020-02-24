@@ -5,7 +5,7 @@ https://repl.it/@matias_perez/JavaScript-6-Lecture-Code
 
 # Lesson Sections
 
-## Lecture Slides: https://slides.com/matias_perez/javascript-six/
+## Lecture Slides: https://slides.com/mattbodily/javascript-six
 
 1. [JavaScript 6 Lecture Notes](#JavaScript-6-Lecture-Notes)
 1. [Additional Resources](#additional-resources)
