@@ -1,7 +1,7 @@
 
 ## Lecture Code
 
-https://repl.it/@matias_perez/JavaScript-6-Lecture-Code
+https://repl.it/@awestenskow/javascript-6-lecture
 
 # Lesson Sections
 
